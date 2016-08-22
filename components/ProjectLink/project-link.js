@@ -22,9 +22,7 @@ export default class ProjectLink extends Component {
     //render markup
     return (
       <div className={stylesProjectLink['project-link']}>
-        <p className={stylesProjectLink['title']}>
-          <Link to={prefixLink(path)}>{name}</Link>
-        </p>
+          <Link to={prefixLink(path)} title={name}  className={stylesProjectLink['title']}>{name}</Link>
       </div>
     )
   }
