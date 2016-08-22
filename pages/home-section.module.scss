@@ -1,0 +1,30 @@
+
+.section
+{
+  padding: 3%;
+  background: white;
+  margin: 0 0 10px 0;
+  min-width: 250px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.title
+{
+  text-align: left;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  display: inline-block;
+  padding: 2px 4px;
+  composes: sectionTitle from './typography.module.scss';
+}
+
+.title--site
+{
+  composes: title;
+}
+
+.body
+{
+  margin: 10px 0px 25px 0px;
+}
