@@ -2,6 +2,7 @@ import React, {Component, PropTypes} from 'react'
 import DocumentTitle from 'react-document-title'
 import { config } from 'config'
 import ProjectLinks from '../components/ProjectLinks';
+import ArticleLinks from '../components/ArticleLinks';
 import styleHome from './home.module.scss';
 import stylesSection from './home-section.module.scss';
 import stylesTypography from './typography.module.scss';
@@ -58,6 +59,32 @@ export default class ReactComponent extends Component {
             <ProjectLinks pages={GetPagesInPath(allPages, 'projects')} />
           </div>
         </section>
+
+        <section className={stylesSection['external-link-section--linkedin']}>
+          <h3 className={stylesSection['external-link-section__title']}>
+            <a href="https://www.linkedin.com/in/petemill/" title="Peter Miller CV and Work Experience" className={stylesSection['external-link-section__link']}>View details of my work history and recommendations on LinkedIn</a>
+          </h3>
+        </section>
+
+        <section className={stylesSection['section']}>
+          <div className={stylesSection.header}>
+            <h2 className={stylesSection.title}>
+              Writing
+            </h2>
+            <p className={stylesTypography.body}>Code, Workflow and other industry topics</p>
+          </div>
+          <div className={stylesSection.body}>
+            <ArticleLinks pages={GetPagesInPath(allPages, 'writing')} />
+          </div>
+        </section>
+
+        <section className={stylesSection['external-link-section--twitter']}>
+          <h3 className={stylesSection['external-link-section__title']}>
+            <a href="https://www.twitter.com/petemill/" title="Pete Miller Twitter" className={stylesSection['external-link-section__link']}>View my Twitter feed</a>
+          </h3>
+        </section>
+
+
       </div>
     )
   }
