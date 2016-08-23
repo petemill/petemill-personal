@@ -35,8 +35,8 @@ export default class ReactComponent extends Component {
     return (
       <div className={styleHome.home}>
 
-        <section className={stylesSection.section}>
-          <div className={stylesSection.header}>
+        <section className={stylesSection['section--home']}>
+          <div className={stylesSection['header--home']}>
             <h1 className={stylesSection['title--site']}>Pete Miller</h1>
             <p className={stylesTypography.body}>I'm a full-stack developer with people and product management experience</p>
           </div>
@@ -48,7 +48,7 @@ export default class ReactComponent extends Component {
           </div>
         </section>
 
-        <section className={stylesSection['section']}>
+        <section className={stylesSection['section--projects']}>
           <div className={stylesSection.header}>
             <h2 className={stylesSection.title}>
               Projects
@@ -66,7 +66,7 @@ export default class ReactComponent extends Component {
           </h3>
         </section>
 
-        <section className={stylesSection['section']}>
+        <section className={stylesSection['section--writing']}>
           <div className={stylesSection.header}>
             <h2 className={stylesSection.title}>
               Writing
@@ -84,7 +84,7 @@ export default class ReactComponent extends Component {
           </h3>
         </section>
 
-        <section className={stylesSection['section']}>
+        <section className={stylesSection['section--tech']}>
           <div className={stylesSection.header}>
             <h2 className={stylesSection.title}>Technologies</h2>
             <p className={stylesTypography.body}>My specific &amp; demonstrable skillset</p>

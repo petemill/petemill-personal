@@ -1,12 +1,41 @@
+$colorProjects: rgb(249, 89, 89);
+$colorWriting: #4496E8;
+$colorTech: #31d0ae;
+
 
 .section
 {
-  padding: 3%;
-  background: white;
   margin: 0 0 10px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.section--content {
+  composes: section;
+}
+
+.section--home
+{
+  composes: section;
+}
+
+.section--projects
+{
+  composes: section--content;
+  border-top: solid 3px $colorProjects
+}
+
+.section--writing
+{
+  composes: section--content;
+  border-top: solid 3px $colorWriting
+}
+
+.section--tech
+{
+  composes: section--content;
+  border-top: solid 3px $colorTech
 }
 
 .header
@@ -15,6 +44,12 @@
   flex-basis: 0;
   flex-shrink: 1;
   flex-grow: 1;
+  padding: 3%;
+}
+
+.header--home
+{
+  composes: header;
 }
 
 .body
@@ -24,6 +59,8 @@
   flex-shrink: 1;
   flex-basis: 0;
   margin: 10px 0px 25px 0px;
+  padding: 10px;
+  padding: 3%;
 }
 
 
@@ -34,10 +71,43 @@
   color: rgba(255, 255, 255, 1);
   display: inline-block;
   padding: 2px 4px;
+  margin-top: 0;
   composes: sectionTitle from './typography.module.scss';
 }
 
 .title--site
 {
   composes: siteTitle from './typography.module.scss';
+}
+
+.external-link-section
+{
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.external-link-section__title
+{
+  margin: 0;
+  color: inherit;
+}
+
+.external-link-section__link
+{
+  color: inherit;
+}
+
+.external-link-section--linkedin
+{
+  composes: external-link-section;
+}
+
+.external-link-section--twitter
+{
+  composes: external-link-section;
+}
+
+.external-link-section--github
+{
+  composes: external-link-section;
 }
