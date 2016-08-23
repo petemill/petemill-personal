@@ -1,6 +1,7 @@
 # Logs
 logs
 *.log
+public/
 
 # Runtime data
 pids
