@@ -52,9 +52,9 @@ export default class ReactComponent extends Component {
             <h2 className={stylesSection.title}>
               Projects
             </h2>
+            <p className={stylesTypography.body}>Select a project to view details of my involvement</p>
           </div>
           <div className={stylesSection.body}>
-            <p className={stylesTypography.body}>Select a project to view details of my involvement</p>
             <ProjectLinks pages={GetPagesInPath(allPages, 'projects')} />
           </div>
         </section>
