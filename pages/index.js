@@ -5,6 +5,9 @@ import ProjectLinks from '../components/ProjectLinks';
 import styleHome from './home.module.scss';
 import stylesSection from './home-section.module.scss';
 import stylesTypography from './typography.module.scss';
+import {GetPagesInPath} from '../utils/PageData';
+
+
 
 export default class ReactComponent extends Component {
 
@@ -23,19 +26,11 @@ export default class ReactComponent extends Component {
   }
 
 
-  renderProjectLinks() {
-
-    //get all page data
-    const allPages = this.props.route.pages;
-    //filter to only project pages
-    const projectPages = this.props.route.pages.filter(page => !page.path.includes('/404') && page.file.dirname.split('/')[0] === 'projects');
-    //render to a project-link list
-    return <ProjectLinks pages={projectPages} />;
-  }
-
-
   render () {
 
+    //all page data
+    const allPages = this.props.route.pages;
+    //render to components
     return (
       <div className={styleHome.home}>
 
@@ -60,7 +55,7 @@ export default class ReactComponent extends Component {
           </div>
           <div className={stylesSection.body}>
             <p className={stylesTypography.body}>Select a project to view details of my involvement</p>
-            {this.renderProjectLinks()}
+            <ProjectLinks pages={GetPagesInPath(allPages, 'projects')} />
           </div>
         </section>
       </div>
