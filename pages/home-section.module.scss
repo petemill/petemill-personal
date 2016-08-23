@@ -18,24 +18,25 @@ $colorTech: #31d0ae;
 .section--home
 {
   composes: section;
+  border-top: solid 12px black;
 }
 
 .section--projects
 {
   composes: section--content;
-  border-top: solid 3px $colorProjects
+  border-top: solid 3px $colorProjects;
 }
 
 .section--writing
 {
   composes: section--content;
-  border-top: solid 3px $colorWriting
+  border-top: solid 3px $colorWriting;
 }
 
 .section--tech
 {
   composes: section--content;
-  border-top: solid 3px $colorTech
+  border-top: solid 3px $colorTech;
 }
 
 .header
