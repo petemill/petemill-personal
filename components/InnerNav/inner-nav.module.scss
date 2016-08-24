@@ -1,0 +1,12 @@
+.inner-nav
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title-link
+{
+  composes: siteTitle from '../../pages/typography.module.scss';
+}

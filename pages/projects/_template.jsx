@@ -1,7 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router'
-import { prefixLink } from 'gatsby-helpers'
-
+import InnerNav from '../../components/InnerNav';
 import stylePage from '../page.module.scss';
 
 module.exports = React.createClass({
@@ -12,9 +10,9 @@ module.exports = React.createClass({
   },
   render () {
     return (
-        <p>Inner pages template</p>
-          {this.props.children}
       <div className={stylePage['page--project']}>
+        <InnerNav sectionName="Projects" />
+        {this.props.children}
       </div>
     )
   }
