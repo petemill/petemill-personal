@@ -1,3 +1,6 @@
+@import "../style/typography";
+
+
 .siteTitle
 {
   font-size: 30px;
@@ -7,19 +10,13 @@
 
 .sectionTitle
 {
-  font-family: VT323;
-  font-weight: 400;
-  font-style: normal;
+  @include titleFont;
   font-size: 28px;
+  font-style: normal;
 }
 
 
 .body
 {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 17px;
-  line-height: 110%;
-  letter-spacing: 0px;
+  @include bodyTypography;
 }

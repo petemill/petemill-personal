@@ -1,0 +1,14 @@
+.role-list
+{
+  list-style: none;
+  padding-left: 12px;
+  li
+  {
+    &:before
+    {
+      content: '-';
+      float: left;
+      margin-left: -12px;
+    }
+  }
+}
