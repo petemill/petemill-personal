@@ -6,6 +6,7 @@ import ArticleLinks from '../components/ArticleLinks';
 import styleHome from './home.module.scss';
 import stylesSection from './home-section.module.scss';
 import stylesTypography from './typography.module.scss';
+import stylesTechnologyList from './technology-list.module.scss';
 import {GetPagesInPath} from '../utils/PageData';
 
 
@@ -90,38 +91,38 @@ export default class ReactComponent extends Component {
             <p className={stylesTypography.body}>My specific &amp; demonstrable skillset</p>
           </div>
           <div className={stylesSection.body}>
-            <div className="technology-list">
-              <h3 className="technology-list__title">Currently Working With</h3>
-              <ul className="technology-list__technologies">
-                <li className="technology-list__technology">Javascript</li>
-                <li className="technology-list__technology">HTML</li>
-                <li className="technology-list__technology">CSS</li>
-                <li className="technology-list__technology">BEM</li>
-                <li className="technology-list__technology">React</li>
-                <li className="technology-list__technology">NodeJS</li>
-                <li className="technology-list__technology">Redis</li>
-                <li className="technology-list__technology">DynamoDB</li>
-                <li className="technology-list__technology">Docker</li>
-                <li className="technology-list__technology">AWS</li>
-                <li className="technology-list__technology">Kubernetes / ECS</li>
-                <li className="technology-list__technology">Linux</li>
-                <li className="technology-list__technology">Codeship / CircleCI</li>
+            <div className={stylesTechnologyList['technology-list-section']}>
+              <h3 className={stylesTechnologyList['technology-list-section__title']}>Currently Working With</h3>
+              <ul className={stylesTechnologyList['technology-list']}>
+                <li className={stylesTechnologyList['technology-list__technology']}>Javascript</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>HTML</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>CSS</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>BEM</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>React</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>NodeJS</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>Redis</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>DynamoDB</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>Docker</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>AWS</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>Kubernetes / ECS</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>Linux</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>Codeship / CircleCI</li>
               </ul>
             </div>
-            <div className="technology-list">
-              <h3 className="technology-list__title">Previous Expert Experience With</h3>
-              <ul className="technology-list__technologies">
-                <li className="technology-list__technology">SQL</li>
-                <li className="technology-list__technology">.net (C#)</li>
-                <li className="technology-list__technology">Windows / IIS</li>
-                <li className="technology-list__technology">KnockoutJS</li>
-                <li className="technology-list__technology">Xamarin (iOS & Android)</li>
-                <li className="technology-list__technology">Umbraco</li>
-                <li className="technology-list__technology">Lucene</li>
-                <li className="technology-list__technology">Windows Services</li>
-                <li className="technology-list__technology">Windows Forms</li>
-                <li className="technology-list__technology">Powershell</li>
-                <li className="technology-list__technology">Teamcity</li>
+            <div className={stylesTechnologyList['technology-list-section']}>
+              <h3 className={stylesTechnologyList['technology-list-section__title']}>Previous Expert Experience With</h3>
+              <ul className={stylesTechnologyList['technology-list']}>
+                <li className={stylesTechnologyList['technology-list__technology']}>SQL</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>.net (C#)</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>Windows / IIS</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>KnockoutJS</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>Xamarin (iOS & Android)</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>Umbraco</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>Lucene</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>Windows Services</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>Windows Forms</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>Powershell</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>Teamcity</li>
               </ul>
             </div>
           </div>

@@ -1,0 +1,23 @@
+@import "./projects/technology-list";
+
+.technology-list-section
+{
+
+}
+
+.technology-list-section__title
+{
+  
+}
+
+.technology-list
+{
+  list-style: none;
+  padding-left: 0;
+}
+
+.technology-list__technology
+{
+  @include technologyItem;
+  margin-bottom: 5px;
+}
