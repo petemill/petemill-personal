@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 
+import stylePage from '../page.module.scss';
 
 module.exports = React.createClass({
   propTypes () {
@@ -11,9 +12,9 @@ module.exports = React.createClass({
   },
   render () {
     return (
-      <div>
         <p>Inner pages template</p>
           {this.props.children}
+      <div className={stylePage['page--project']}>
       </div>
     )
   }

@@ -1,4 +1,4 @@
 .home
 {
-  padding: 25px;
+  composes: page from './page.module.scss';
 }
