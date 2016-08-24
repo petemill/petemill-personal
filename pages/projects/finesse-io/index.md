@@ -31,10 +31,16 @@ Finesse solves that problem by running the website from any live location the we
 
 [Learn more about Finesse and sign-up to use it at finesse.io.](finesse.io)
 
+<img class="content-image --screenshot" src="./workspace-preview.png" alt="finesse.io screenshot" />
+
 :::: timeline
 ### Timeline{.timeline__title}
 
 ::: timeline__item
 #### 2016-05{.timeline__item-title}
 MVP implementation of product complete. Began collecting beta signups.
+
+<img class="timeline__item-image --screenshot" src="./timeline-signup.png" alt="finesse.io signup screenshot" />
 :::
+
+::::

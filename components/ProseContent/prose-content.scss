@@ -6,8 +6,19 @@
   {
     @include bodyTypography;
   }
+
   h2, h3, h4, h5, h6
   {
     @include titleFont;
+  }
+
+  .content-image
+  {
+    max-width: 100%;
+  }
+
+  .content-image.--screenshot
+  {
+
   }
 }
