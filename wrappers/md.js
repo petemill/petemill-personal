@@ -12,10 +12,10 @@ module.exports = React.createClass({
     const post = this.props.route.page.data
     return (
       <DocumentTitle title={`${post.title} | ${config.siteTitle}`}>
-        <div>
+        <article>
           <h1>{post.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.body }} />
-        </div>
+        </article>
       </DocumentTitle>
     )
   },
