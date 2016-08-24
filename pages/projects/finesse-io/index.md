@@ -4,9 +4,21 @@ title: Finesse
 
 ### Role
 - Founder
-- Sole Developer
+- Front-end development
+- Back-end development
 - Information Architecture
 - Cloud Infrastructure Architecture
+{.role-list}
+
+### Technologies
+- NodeJS
+- SCSS
+- Javascript
+- HTML
+- Web Proxy
+- DynamoDB
+- Redis
+{.technology-list}
 
 ### What is it?
 Finesse is a web app that I co-founded in order to solve a common workflow problem for designers and front-end developers.
@@ -19,8 +31,10 @@ Finesse solves that problem by running the website from any live location the we
 
 [Learn more about Finesse and sign-up to use it at finesse.io.](finesse.io)
 
-### Timeline
+:::: timeline
+### Timeline{.timeline__title}
 
-#### 2016-05
-
+::: timeline__item
+#### 2016-05{.timeline__item-title}
 MVP implementation of product complete. Began collecting beta signups.
+:::
