@@ -2,6 +2,7 @@
 
 .prose-content__body
 {
+
   > p
   {
     @include bodyTypography;
@@ -10,7 +11,19 @@
     margin-right: auto;
   }
 
-  h2, h3, h4, h5, h6
+  > ul:not(.technology-list)
+  {
+    li
+    {
+      @include bodyTypography;
+    }
+  }
+
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6
   {
     @include titleFont;
   }

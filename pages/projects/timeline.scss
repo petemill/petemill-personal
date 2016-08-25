@@ -7,14 +7,14 @@
 
 .timeline__title
 {
-
+  @include titleFont;
 }
 
 .timeline__item
 {
   border-left: solid 6px black;
   padding-left: 6px;
-  p
+  p, li
   {
     @include bodyTypography;
   }
@@ -22,7 +22,7 @@
 
 .timeline__item-title
 {
-
+  @include titleFont;
 }
 
 .timeline__item-image
