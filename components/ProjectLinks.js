@@ -22,7 +22,7 @@ export default class ProjectLinks extends Component {
     //convert to elements
     return (
       <div className="project-links">
-        {sortedPages.map(page => <ProjectLink name={page.data.title} path={page.path} />)}
+        {sortedPages.map(page => <ProjectLink key={page.path} name={page.data.title} path={page.path} />)}
       </div>
     );
   }
