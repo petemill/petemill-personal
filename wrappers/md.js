@@ -14,8 +14,8 @@ module.exports = React.createClass({
     return (
       <DocumentTitle title={`${post.title} | ${config.siteTitle}`}>
         <article className="prose-content">
-          <h1>{post.title}</h1>
-          <div dangerouslySetInnerHTML={{ __html: post.body }} />
+          <h1 className="prose-content__title">{post.title}</h1>
+          <div className="prose-content__body" dangerouslySetInnerHTML={{ __html: post.body }} />
         </article>
       </DocumentTitle>
     )
