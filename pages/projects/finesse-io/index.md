@@ -1,5 +1,6 @@
 ---
 title: Finesse
+sort: 090
 ---
 
 ### Role
