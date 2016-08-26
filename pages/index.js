@@ -54,7 +54,8 @@ export default class ReactComponent extends Component {
             <h2 className={stylesSection.title}>
               Projects
             </h2>
-            <p className={stylesTypography.body}>Select a project to view details of my involvement</p>
+            <p className={stylesTypography.body}>A selection of projects I've worked on</p>
+            <p className={stylesTypography.body}>Choose one to view details of my involvement</p>
           </div>
           <div className={stylesSection.body}>
             <ProjectLinks pages={GetPagesInPath(allPages, 'projects')} />
