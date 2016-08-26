@@ -1,5 +1,5 @@
 ---
-title: Vogue.co.uk
+title: Vogue
 sort: 070
 ---
 

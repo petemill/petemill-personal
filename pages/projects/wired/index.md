@@ -1,5 +1,5 @@
 ---
-title: Wired.co.uk
+title: Wired
 sort: 080
 ---
 
