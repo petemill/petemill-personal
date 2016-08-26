@@ -7,8 +7,6 @@
   {
     @include bodyTypography;
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   > ul:not(.technology-list)
@@ -16,6 +14,8 @@
     li
     {
       @include bodyTypography;
+      max-width: 650px;
+      margin-bottom: 10px;
     }
   }
 
