@@ -1,7 +1,4 @@
-$colorProjects: rgb(249, 89, 89);
-$colorWriting: #4496E8;
-$colorTech: #31d0ae;
-
+@import "../style/colors";
 
 .section
 {
@@ -18,25 +15,25 @@ $colorTech: #31d0ae;
 .section--home
 {
   composes: section;
-  border-top: solid 12px black;
+  border-top: solid 12px $color1;
 }
 
 .section--projects
 {
   composes: section--content;
-  border-top: solid 3px $colorProjects;
+  border-top: solid 3px $color4;
 }
 
 .section--writing
 {
   composes: section--content;
-  border-top: solid 3px $colorWriting;
+  border-top: solid 3px $color2;
 }
 
 .section--tech
 {
   composes: section--content;
-  border-top: solid 3px $colorTech;
+  border-top: solid 3px $color3;
 }
 
 .header
@@ -75,9 +72,28 @@ $colorTech: #31d0ae;
   composes: sectionTitle from './typography.module.scss';
 }
 
+.title--projects
+{
+  composes: title;
+  color: $color4;
+}
+
+.title--writing
+{
+  composes: title;
+  color: $color2;
+}
+
+.title--tech
+{
+  composes: title;
+  color: $color3;
+}
+
 .title--site
 {
   composes: siteTitle from './typography.module.scss';
+  color: $color1;
 }
 
 .external-link-section

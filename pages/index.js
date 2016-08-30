@@ -51,7 +51,7 @@ export default class ReactComponent extends Component {
 
         <section className={stylesSection['section--projects']}>
           <div className={stylesSection.header}>
-            <h2 className={stylesSection.title}>
+            <h2 className={stylesSection['title--projects']}>
               Projects
             </h2>
             <p className={stylesTypography.body}>A selection of projects I've worked on</p>
@@ -70,7 +70,7 @@ export default class ReactComponent extends Component {
 
         <section className={stylesSection['section--writing']}>
           <div className={stylesSection.header}>
-            <h2 className={stylesSection.title}>
+            <h2 className={stylesSection['title--writing']}>
               Writing
             </h2>
             <p className={stylesTypography.body}>Code, Workflow and other industry topics</p>
@@ -88,7 +88,7 @@ export default class ReactComponent extends Component {
 
         <section className={stylesSection['section--tech']}>
           <div className={stylesSection.header}>
-            <h2 className={stylesSection.title}>Technologies</h2>
+            <h2 className={stylesSection['title--tech']}>Technologies</h2>
             <p className={stylesTypography.body}>My specific &amp; demonstrable skillset</p>
           </div>
           <div className={stylesSection.body}>
