@@ -24,6 +24,9 @@ export default class ArticleLink extends Component {
     return (
       <div className={stylesArticleLink['article-link']}>
         <Link to={prefixLink(path)} title={name}  className={stylesArticleLink['title']}>{name}</Link>
+      {description
+        && <Link to={prefixLink(path)} title={name} className={stylesArticleLink['description']}>{description}</Link>
+      }
       </div>
     )
   }
