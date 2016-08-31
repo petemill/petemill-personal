@@ -4,11 +4,11 @@ sort: 080
 ---
 
 ### Responsible For
+- Full-stack software development and architecture
+- Direct management of the development team
 - Managing the UX and Design process
 - Working with editorial and commercial teams to prioritize features
 - Content structure and CMS configuration
-- Full-stack software development and architecture
-- Direct management of the development team
 - Server & Cloud Infrastructure architecture
 - Build workflow & Continuous Integration implementation
 - Analyzing user-journeys through analytics and sharing reports with other teams
