@@ -32,7 +32,13 @@ const md = markdownIt({
   .use(require('markdown-it-abbr'))
   .use(require('markdown-it-attrs'))
   .use(blockEmbedPlugin, {
-    containerClassName: 'media-embed'
+    containerClassName: 'media-embed',
+    outputPlayerSize: false,
+    outputPlayerAspectRatio: true,
+    allowInstancePlayerSizeDefinition: true,
+    vimeo: {
+      isBackground: true
+    }
   })
   .use(require('./TimelineContainer'))
 
