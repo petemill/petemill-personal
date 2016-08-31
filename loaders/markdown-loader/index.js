@@ -1,5 +1,6 @@
 import frontMatter from 'front-matter'
 import markdownIt from 'markdown-it'
+const blockEmbedPlugin = require("markdown-it-block-embed");
 import hljs from 'highlight.js'
 import objectAssign from 'object-assign'
 
@@ -30,6 +31,9 @@ const md = markdownIt({
   .use(require('markdown-it-deflist'))
   .use(require('markdown-it-abbr'))
   .use(require('markdown-it-attrs'))
+  .use(blockEmbedPlugin, {
+    containerClassName: 'media-embed'
+  })
   .use(require('./TimelineContainer'))
 
 module.exports = function (content) {

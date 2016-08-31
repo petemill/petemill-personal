@@ -18,6 +18,11 @@
   {
     @include bodyTypography;
   }
+  .media-embed
+  {
+    width: 500px;
+    max-width: 100%;
+  }
 }
 
 .timeline__item-title
@@ -29,5 +34,4 @@
 {
   width: 500px;
   max-width: 100%;
-
 }

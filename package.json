@@ -17,6 +17,7 @@
     "markdown-it": "^7.0.0",
     "markdown-it-abbr": "^1.0.3",
     "markdown-it-attrs": "^0.6.3",
+    "petemill/markdown-it-block-embed": "0.0.3",
     "markdown-it-container": "^2.0.0",
     "markdown-it-deflist": "^2.0.1",
     "markdown-it-footnote": "^3.0.0",
