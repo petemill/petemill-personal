@@ -51,12 +51,17 @@ These methods include:
 
 ::: timeline__item
 #### 2013{.timeline__item-title}
-Managed the process to conceive of a more immersive reading experience, focusing on a responsive desktop and mobile design as well as removing redundant visual components.
+Managed the process to conceive of a more immersive reading experience, focusing on a responsive desktop and mobile design as well as removing redundant visual components. Maintained editorial ability to create these immersive experiences themselves within a Content Management System, with design-team support available.
+
+@[vimeo](122073076##4x1)
+
 :::
 
 ::: timeline__item
 #### 2012{.timeline__item-title}
-Completely new website with custom low-latency routing and delivery, and editorial content platform. I led the development team, and I worked very closely with design, editorial and commercial teams on structure, information architucture and UX.
+Completely new website with custom low-latency routing and delivery, and editorial content platform. I led the development team, and I worked very closely with design, editorial and commercial teams on structure, information architecture and UX.
+
+![Wired.co.uk screenshot from 2012](./wired-2012.png){.timeline__item-image .--screenshot}
 :::
 
 
