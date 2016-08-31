@@ -53,7 +53,7 @@ These methods include:
 #### 2013{.timeline__item-title}
 Managed the process to conceive of a more immersive reading experience, focusing on a responsive desktop and mobile design as well as removing redundant visual components. Maintained editorial ability to create these immersive experiences themselves within a Content Management System, with design-team support available.
 
-@[vimeo](122073076##4x1)
+@[vimeo](122073076##62)
 
 :::
 
