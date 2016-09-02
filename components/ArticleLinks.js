@@ -18,7 +18,7 @@ export default class ProjectLinks extends Component {
     //get all pages we will render (should be pre-filtered)
     const { pages } = this.props;
     //page sort order
-    const sortedPages = sortBy(pages, (page) => page.data.sort || 0).reverse();
+    const sortedPages = sortBy(pages, (page) => page.data.created_utc || 0).reverse();
     //convert to elements
     return (
       <div className="article-links">
