@@ -27,7 +27,7 @@ The scenario begs for a solution involving some kind of repository both of conte
 This sounds very similar to the feature set of many Distributed Version Control Systems. Thanks to [James Freiwirth](http://thecodedecanter.wordpress.com/)'s investigation and code (and persistence!), [we started with a set of commands in a script that would instruct a folder to fetch the latest revision of a set of files under Git version control and update to that revision](http://thecodedecanter.wordpress.com/2010/03/25/one-click-website-deployment-using-teamcity-nant-git-and-powershell/). So now we could have multiple servers pulling from a central Git repository on another server and maintaining the same version between themselves. What's more, by using Git the following features are gained:  
 
 
-  * It's index-based – Git will fetch a revision and store it in its index **before applying **that revision to the working dir. That means, even on a slow connection, applying changes is very quick – no more half-changed working directory whilst waiting for large files to transfer. FTP, I'm talking to you!  
+  * It's index-based – Git will fetch a revision and store it in its index **before applying** that revision to the working dir. That means, even on a slow connection, applying changes is very quick – no more half-changed working directory whilst waiting for large files to transfer. FTP, I'm talking to you!  
 
   * It's optimised – Git will only fetch change deltas, and it's also very good at detecting repeated content in multiple files.  
 
@@ -38,7 +38,7 @@ So you could commit from anywhere to your deployment Git repository, and have al
 
 
 
-![](http://4.bp.blogspot.com/_gYxqdqw9RN8/TCEgmoRKdMI/AAAAAAAAByA/-wsQrkcMKtg/s320/gitdeploy-buildoutput.JPG)  
+![](../media-a/gitdeploy-buildoutput.JPG)  
 
 
 ## Synchronising IIS  
@@ -48,15 +48,13 @@ Maintaining web server configuration across all servers is just as important as 
 
 To accomplish this, we can use the exact same method for synchronising IIS configuration that we use for content. We can set up a git repository, put in the IIS configuration, pull this down to each server and instruct each server's IIS to point to the working copy of the revision control repository. Then, we now have history, comments and rollback ability for IIS configuration. Being able to see each IIS configuration change difference is alone an incredibly invaluable feature for our multi-site environment.  
 
-
-
-![](http://wishfulcode.files.wordpress.com/2010/06/gitdeploy-iis.jpg?w=300)   
+![](../media-a/gitdeploy-iis.jpg)   
 
 
 ## Practical setup (on Amazon EC2)  
 
 
-The final task to accomplish is to identify what process runs on all the servers to keep them always pulling the latest version of both the content and the configuration. The best we've used so far is simple Windows 2008 Task Scheduler powershell scripts, which James gives examples of. **However, these scripts themselves **can change over time since they need to know which repositories to synchronise. This calls for yet another revision controlled repository. The scheduled tasks on the servers themselves are only running stub files which define a key, to identify which farm, and therefore which sites a server needs, and then runs another powershell script retrieved from a central git repository which ensures the correct content repositories for that farm are created and up to date.  
+The final task to accomplish is to identify what process runs on all the servers to keep them always pulling the latest version of both the content and the configuration. The best we've used so far is simple Windows 2008 Task Scheduler powershell scripts, which James gives examples of. **However, these scripts themselves** can change over time since they need to know which repositories to synchronise. This calls for yet another revision controlled repository. The scheduled tasks on the servers themselves are only running stub files which define a key, to identify which farm, and therefore which sites a server needs, and then runs another powershell script retrieved from a central git repository which ensures the correct content repositories for that farm are created and up to date.  
 
 
 The end result is a completely autonomous (for their runtime) set of web servers, which call to central repositories in order to seek updated content and configuration.   
