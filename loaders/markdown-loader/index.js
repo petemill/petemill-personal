@@ -22,7 +22,7 @@ const highlight = (str, lang) => {
 
 const md = markdownIt({
   html: true,
-  linkify: true,
+  linkify: false,
   typographer: true,
   highlight,
 })
