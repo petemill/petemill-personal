@@ -5,7 +5,7 @@ import hljs from 'highlight.js'
 import objectAssign from 'object-assign'
 
 const highlight = (str, lang) => {
-  if ((lang !== null) && hljs.getLanguage(lang)) {
+  if (lang && hljs.getLanguage(lang)) {
     try {
       return hljs.highlight(lang, str).value
     } catch (_error) {
@@ -17,8 +17,8 @@ const highlight = (str, lang) => {
   } catch (_error) {
     console.error(_error)
   }
-  return ''
-}
+  return '';
+};
 
 const md = markdownIt({
   html: true,
