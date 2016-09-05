@@ -118,6 +118,7 @@ export default class ReactComponent extends Component {
                 <li className={stylesTechnologyList['technology-list__technology']}>Windows / IIS</li>
                 <li className={stylesTechnologyList['technology-list__technology']}>KnockoutJS</li>
                 <li className={stylesTechnologyList['technology-list__technology']}>Xamarin (iOS & Android)</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>Wordpress</li>
                 <li className={stylesTechnologyList['technology-list__technology']}>Umbraco</li>
                 <li className={stylesTechnologyList['technology-list__technology']}>Lucene</li>
                 <li className={stylesTechnologyList['technology-list__technology']}>Windows Services</li>
