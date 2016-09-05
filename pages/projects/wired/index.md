@@ -46,6 +46,8 @@ These methods include:
 - Automatic topic relations
 - Single content-streams with differing presentation of content items
 - Cross-page session preservation, including position within streams of content
+
+![Wired.co.uk screenshot from 2014](./wired-2014-list.png){.timeline__item-image .--screenshot}
 :::
 
 

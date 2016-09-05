@@ -10,6 +10,7 @@ sort: 060
 - Briefing designers and critiquing prototypes
 - Managing design and development
 - Architecting a NodeJS queue management service and API
+- iOS App Store provisioning, setup and app deployment
 
 ### Technologies
 - NodeJS
@@ -18,6 +19,7 @@ sort: 060
 - HTML
 - Umbraco
 - Adobe Experience Manager
+- iTunes Connect
 {.technology-list}
 
 ### What is it?
@@ -33,6 +35,10 @@ This showed through the way I architected the workflow. The content was to be pu
 
 I hired and created a team to look at the gaps between the experience of a print magazine and the experience of content on a digital device. Through a process of analyzing content over several issues, we created reusable and skin-able html components to represent article content that was not simply straightforward paragraphs of text. They all came together to make a more immersive yet structured reading experience for different types of content.
 
+I put a case forward that the content discoverability mechanisms are inherently different on digital formats than print. With a print magazine, readers often flip through a magazine at the order they choose tactilely (front to back, back to front, or starting in the middle. We therefore architected the navigation, the contents page and the cover page so that the user can get an overview of the entire magazine structure, instead of the teaser-like nature of the print counterpart. No matter where they start, a user can ascertain where in the bundle of content they were at, and where they could go, very quickly.
+
+![Example of Glamour Magazine iOS app content structure](./glamour-cards.png){.content-image}
+
 On the software side, I learnt and educated the rest of the team, who were already skilled in javascript, how to use NodeJS to rapidly create an API publishing queue and scheduling service to ingest content from the website CMS and send it to multiple app publishing platforms, including Adobe Experience Manager.
 
 :::: timeline
@@ -45,7 +51,10 @@ British Vogue, British GQ and British Glamour all have their *tablet* editions, 
 
 ::: timeline__item
 #### 2014-11{.timeline__item-title}
-British Glamour is published on mobile in the App Store, the first to have a fully responsive monthly package with a completely templated but interactive experience.
+British Glamour is published on mobile in the App Store, the first to have a fully responsive monthly package with a completely interactive yet templated experience.
+
+@[vimeo](121742698##303x540)
+
 :::
 
 ::: timeline__item

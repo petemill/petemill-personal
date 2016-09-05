@@ -44,6 +44,8 @@ This site was a great opportunity to think about differing needs of different us
 ::: timeline__item
 #### 2013{.timeline__item-title}
 Managed the redesign of Fashion Show content for the site, including a research stage investigating . Resulted in an immersive design where all content from a show is presented to a user at once, and still encouraged exploration and ease of discoverability for content by an adaptive taxonomy that displayed content by fashion season, by designer or both.
+
+@[vimeo](117640576##864x540)
 :::
 
 ::: timeline__item
@@ -53,6 +55,8 @@ Managed the design and development teams responsible for a complete re-imagining
 This was the first high-profile, high-traffic consumer magazine website to become responsive to fully take advantage of all screen sizes and input paradigm.
 
 The team also dramatically improved the reading experience for users and advertising experience for both users *and* advertisers. The goal was to meet the quality and care of design the *Vogue* brand is known for from its print product. We pioneered the use of performant web design techniques and [received industry acclaim](http://typecast.com/blog/british-vogue-gets-top-marks-for-ux-and-branding).
+
+@[vimeo](121965847##62)
 :::
 
 ::: timeline__item
