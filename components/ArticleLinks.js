@@ -35,10 +35,13 @@ export default class ProjectLinks extends Component {
     return (
       <div className={stylesContentList['content-list']}>
 
-        {displayedPages.map(page => <ArticleLink className={stylesContentList.item} key={page.path} name={page.data.title} path={page.path} description={page.data.description} />)}
+        {/* actual links */}
+        {displayedPages.map(page => <ArticleLink className={stylesContentList.item} key={page.path} name={page.data.title} path={page.path} description={page.data.description} publishDate={page.data.created_utc ? new Date(page.data.created_utc + ' UTC') : undefined} />)}
 
+        {/* hidden but rendered for google until we get sitemap */}
         {hiddenPages.map(page => <ArticleLink className={classNames(stylesContentList.item, stylesContentList.overThreshold)} key={page.path} name={page.data.title} path={page.path} description={page.data.description} />)}
 
+        {/* list expansion toggle */}
         <button type="button" className={classNames(
           stylesContentList['expand-command'], {
           [stylesContentList['-is-expanded']]: this.state.showExpanded
