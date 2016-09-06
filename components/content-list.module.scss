@@ -17,6 +17,7 @@
   border: none;
   color: #0000dd;
   text-decoration: underline;
+  cursor: pointer;
   &:not(.-is-expanded)
   {
     font-weight: bold;
