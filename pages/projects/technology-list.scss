@@ -1,10 +1,15 @@
 @mixin technologyItem
 {
-  border: solid 1px black;
   margin: 5px;
-  padding: 2px;
-  font-family: monospace;
+  padding: 5px 8px;
+  font-family: "Space Mono";
+  font-size: 13px;
+  line-height: 150%;
+  color: white;
+  background: black;
+  border-radius: 4px;
 }
+
 
 .technology-list
 {

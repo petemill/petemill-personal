@@ -1,4 +1,5 @@
 @import "../../style/typography";
+@import "../../style/colors";
 
 .timeline
 {
@@ -8,11 +9,13 @@
 .timeline__title
 {
   @include titleFont;
+  font-size: 27px;
+  line-height: 100%;
 }
 
 .timeline__item
 {
-  border-left: solid 6px black;
+  border-left: solid 6px $colorProjects;
   padding-left: 6px;
   p, li
   {
@@ -28,6 +31,9 @@
 .timeline__item-title
 {
   @include titleFont;
+  font-size: 27px;
+  line-height: 100%;
+  color: $colorProjects;
 }
 
 .timeline__item-image

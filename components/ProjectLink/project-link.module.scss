@@ -1,13 +1,12 @@
 @import "../../style/colors";
+@import "../../style/utils";
 
 .project-link
 {
-  //background-color: $color4_a;
-  border-color: $color4_a;
   border-width: 4px;
   border-style: solid;
-  color: $color4_d;
-  margin: 8px;
+  margin: 8px auto;
+  max-width: 450px;
 }
 
 .title
@@ -20,7 +19,7 @@
   &:hover
   {
     background: none;
-    //color: $color4_a;
-    background-color: $color4_a;
+    color: white;
+    background-color: black;
   }
 }

@@ -39,7 +39,7 @@ export default class ReactComponent extends Component {
         <section className={stylesSection['section--home']}>
           <div className={stylesSection['header--home']}>
             <h1 className={stylesSection['title--site']}>Pete Miller</h1>
-            <p className={stylesTypography.body}>I'm a full-stack developer with people and product management experience</p>
+            <p className={stylesSection['subtitle']}>I'm a full-stack developer with people and product management experience</p>
           </div>
           <div className={stylesSection.body}>
             <p className={stylesTypography.body}>I have a passion for the web. I love to work on front-end and back-end problems, whilst architecting data structures, build and deployment setup, and creating cloud infrastructure. I also enjoy the personal nature of devices and apps and am motivated to work on apps which empower people.</p>
@@ -54,42 +54,45 @@ export default class ReactComponent extends Component {
             <h2 className={stylesSection['title--projects']}>
               Projects
             </h2>
-            <p className={stylesTypography.body}>A selection of projects I've worked on</p>
-            <p className={stylesTypography.body}>Choose one to view details of my involvement</p>
+            <p className={stylesSection['subtitle']}>A selection of projects I've worked on</p>
+            <p className={stylesSection['subtitle']}>Choose one to view details of my involvement</p>
           </div>
           <div className={stylesSection.body}>
             <ProjectLinks pages={GetPagesInPath(allPages, 'projects')} />
+
+            <section className={stylesSection['external-link-section--linkedin']}>
+              <h3 className={stylesSection['external-link-section__title']}>
+                <a href="https://www.linkedin.com/in/petemill/" title="Peter Miller CV and Work Experience" className={stylesSection['external-link-section__link']}>View my work history on LinkedIn</a>
+              </h3>
+            </section>
           </div>
         </section>
 
-        <section className={stylesSection['external-link-section--linkedin']}>
-          <h3 className={stylesSection['external-link-section__title']}>
-            <a href="https://www.linkedin.com/in/petemill/" title="Peter Miller CV and Work Experience" className={stylesSection['external-link-section__link']}>View details of my work history and recommendations on LinkedIn</a>
-          </h3>
-        </section>
+
 
         <section className={stylesSection['section--writing']}>
           <div className={stylesSection.header}>
             <h2 className={stylesSection['title--writing']}>
               Writing
             </h2>
-            <p className={stylesTypography.body}>Code, Workflow and other industry topics</p>
+            <p className={stylesSection['subtitle']}>Code, Workflow and other industry topics</p>
           </div>
           <div className={stylesSection.body}>
             <ArticleLinks pages={GetPagesInPath(allPages, 'writing')} />
+            <section className={stylesSection['external-link-section--twitter']}>
+              <h3 className={stylesSection['external-link-section__title']}>
+                <a href="https://www.twitter.com/petemill/" title="Pete Miller Twitter" className={stylesSection['external-link-section__link']}>View my Twitter feed</a>
+              </h3>
+            </section>
           </div>
         </section>
 
-        <section className={stylesSection['external-link-section--twitter']}>
-          <h3 className={stylesSection['external-link-section__title']}>
-            <a href="https://www.twitter.com/petemill/" title="Pete Miller Twitter" className={stylesSection['external-link-section__link']}>View my Twitter feed</a>
-          </h3>
-        </section>
+
 
         <section className={stylesSection['section--tech']}>
           <div className={stylesSection.header}>
             <h2 className={stylesSection['title--tech']}>Technologies</h2>
-            <p className={stylesTypography.body}>My specific &amp; demonstrable skillset</p>
+            <p className={stylesSection['subtitle']}>My specific &amp; demonstrable skillset</p>
           </div>
           <div className={stylesSection.body}>
             <div className={stylesTechnologyList['technology-list-section']}>
@@ -127,14 +130,16 @@ export default class ReactComponent extends Component {
                 <li className={stylesTechnologyList['technology-list__technology']}>Teamcity</li>
               </ul>
             </div>
+
+            <section className={stylesSection['external-link-section--github']}>
+              <h3 className={stylesSection['external-link-section__title']}>
+                <a href="https://github.com/petemill/" title="Pete Miller Github code" className={stylesSection['external-link-section__link']}>View my code contributions on Github</a>
+              </h3>
+            </section>
           </div>
         </section>
 
-        <section className={stylesSection['external-link-section--github']}>
-          <h3 className={stylesSection['external-link-section__title']}>
-            <a href="https://github.com/petemill/" title="Pete Miller Github code" className={stylesSection['external-link-section__link']}>View my code contributions on Github</a>
-          </h3>
-        </section>
+
       </div>
     )
   }

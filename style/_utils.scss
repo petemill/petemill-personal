@@ -1,0 +1,123 @@
+// -----------------------------
+// arrows
+// -----------------------------
+
+// $direction: top, left, right, bottom, top-left, top-right, bottom-left, bottom-right
+// $color: hex, rgb or rbga
+// $size: px or em
+// $position: true or false - optional (move to overhanging centered edge, message box style)
+// @example
+// .element{
+//   @include arrow(top, #000, 50px, true);
+// }
+
+@mixin arrow($direction, $color, $size, $position: false) {
+    display: block;
+    height: 0;
+    width: 0;
+
+    @if $position == true {
+        content: "";
+        position: absolute;
+
+        @if $direction == "top" {
+            bottom: 100%;
+            left: 50%;
+            margin-left: (-$size);
+        } @else if $direction == "bottom" {
+            top: 100%;
+            left: 50%;
+            margin-left: (-$size);
+        } @else if $direction == "left" {
+            right: 100%;
+            top: 50%;
+            margin-top: (-$size);
+        } @else if $direction == "right" {
+            left: 100%;
+            top: 50%;
+            margin-top: (-$size);
+        }
+    }
+
+    @if $direction == "top" {
+        border-top: $size solid transparent;
+        border-bottom: $size solid $color;
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+    } @else if $direction == "right" {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-left: $size solid $color;
+        border-right: $size solid transparent;
+    } @else if $direction == "bottom" {
+        border-top: $size solid $color;
+        border-bottom: $size solid transparent;
+        border-right: $size solid transparent;
+        border-left: $size solid transparent;
+    } @else if $direction == "left" {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-left: $size solid transparent;
+        border-right: $size solid $color;
+    } @else if $direction == "top-left" {
+        border-top: $size solid $color;
+        border-right: $size solid transparent;
+    } @else if $direction == "top-right" {
+        border-top: $size solid $color;
+        border-left: $size solid transparent;
+    } @else if $direction == "bottom-left" {
+        border-bottom: $size solid $color;
+        border-right: $size solid transparent;
+    } @else if $direction == "bottom-right" {
+        border-bottom: $size solid $color;
+        border-left: $size solid transparent;
+    }
+}
+
+@mixin minWidths($style, $base: '', $w400: '', $w480: '', $w565: '', $w600: '', $w640: '', $w728: '', $w768: '', $w799: '', $w800: '', $w850: '', $w900: '', $w1000: '', $w1024: '', $w1025: '', $w1100: '', $w1200: '', $w1280: '', $w1300: '', $w1400: '', $w1500: '', $w1600: '', $w1700: '', $w1800: '')
+{
+	@if($base != ''){ #{$style}:$base; }
+	@if($w400 != ''){ @media screen and (min-width: 400px) { #{$style}:$w400;} }
+	@if($w480 != ''){ @media screen and (min-width: 480px) { #{$style}:$w480;} }
+	@if($w565 != ''){ @media screen and (min-width: 565px) { #{$style}:$w565;} }
+	@if($w600 != ''){ @media screen and (min-width: 600px) { #{$style}:$w600;} }
+	@if($w640 != ''){ @media screen and (min-width: 640px) { #{$style}:$w640;} }
+	@if($w728 != ''){ @media screen and (min-width: 728px) { #{$style}:$w728;} }
+	@if($w768 != ''){ @media screen and (min-width: 768px) { #{$style}:$w768;} }
+	@if($w799 != ''){ @media screen and (min-width: 799px) { #{$style}:$w799;} }
+	@if($w800 != ''){ @media screen and (min-width: 800px) { #{$style}:$w800;} }
+	@if($w850 != ''){ @media screen and (min-width: 850px) { #{$style}:$w850;} }
+	@if($w900 != ''){ @media screen and (min-width: 900px) { #{$style}:$w900;} }
+	@if($w1000 != ''){ @media screen and (min-width: 1000px) { #{$style}:$w1000;} }
+	@if($w1024 != ''){ @media screen and (min-width: 1024px) { #{$style}:$w1024;} }
+	@if($w1025 != ''){ @media screen and (min-width: 1025px) { #{$style}:$w1025;} }
+	@if($w1100 != ''){ @media screen and (min-width: 1100px) { #{$style}:$w1100;} }
+	@if($w1200 != ''){ @media screen and (min-width: 1200px) { #{$style}:$w1200;} }
+	@if($w1280 != ''){ @media screen and (min-width: 1280px) { #{$style}:$w1280;} }
+	@if($w1300 != ''){ @media screen and (min-width: 1300px) { #{$style}:$w1300;} }
+	@if($w1400 != ''){ @media screen and (min-width: 1400px) { #{$style}:$w1400;} }
+	@if($w1500 != ''){ @media screen and (min-width: 1500px) { #{$style}:$w1500;} }
+	@if($w1600 != ''){ @media screen and (min-width: 1600px) { #{$style}:$w1600;} }
+	@if($w1700 != ''){ @media screen and (min-width: 1700px) { #{$style}:$w1700;} }
+	@if($w1800 != ''){ @media screen and (min-width: 1800px) { #{$style}:$w1800;} }
+}
+
+@mixin maxWidths($style, $base: '', $w480: '', $w565: '', $w640: '', $w728: '', $w768: '', $w799: '', $w800: '', $w849: '', $w850: '', $w999: '', $w1024: '', $w1100: '', $w1280: '', $w1400: '', $w1600: '')
+{
+    @if($base != ''){ #{$style}:$base; }
+    @if($w1600 != ''){ @media screen and (max-width: 1600px) { #{$style}:$w1600;} }
+    @if($w1400 != ''){ @media screen and (max-width: 1400px) { #{$style}:$w1400;} }
+    @if($w1280 != ''){ @media screen and (max-width: 1280px) { #{$style}:$w1280;} }
+    @if($w1100 != ''){ @media screen and (max-width: 1100px) { #{$style}:$w1100;} }
+	@if($w1024 != ''){ @media screen and (max-width: 1024px) { #{$style}:$w1024;} }
+    @if($w999 != ''){ @media screen and (max-width: 999px) { #{$style}:$w999;} }
+	@if($w850 != ''){ @media screen and (max-width: 850px) { #{$style}:$w850;} }
+	@if($w849 != ''){ @media screen and (max-width: 849px) { #{$style}:$w849;} }
+	@if($w800 != ''){ @media screen and (max-width: 800px) { #{$style}:$w800;} }
+	@if($w799 != ''){ @media screen and (max-width: 799px) { #{$style}:$w799;} }
+	@if($w768 != ''){ @media screen and (max-width: 768px) { #{$style}:$w768;} }
+	@if($w728 != ''){ @media screen and (max-width: 728px) { #{$style}:$w728;} }
+	@if($w640 != ''){ @media screen and (max-width: 640px) { #{$style}:$w640;} }
+	@if($w565 != ''){ @media screen and (max-width: 565px) { #{$style}:$w565;} }
+	@if($w480 != ''){ @media screen and (max-width: 480px) { #{$style}:$w480;} }
+}

@@ -3,7 +3,7 @@ title: Magazine Apps
 sort: 060
 ---
 
-### Responsible for:
+## Responsible for:
 - Creating a publishing workflow
 - Creating an end-to-end prototype
 - Hiring and managing front-end developers
@@ -12,7 +12,7 @@ sort: 060
 - Architecting a NodeJS queue management service and API
 - iOS App Store provisioning, setup and app deployment
 
-### Technologies
+## Technologies
 - NodeJS
 - SCSS
 - Javascript
@@ -22,7 +22,7 @@ sort: 060
 - iTunes Connect
 {.technology-list}
 
-### What is it?
+## What is it?
 
 At a time where subscription-based monthly magazine content distributed through phone or tablet app-store's was either a direct PDF of a magazine, or one that was painstakingly laid out for each device still using a print design workflow, I pitched for the ability to re-imagine both the user-experience and the internal publishing workflow. The arguments laid out by myself consisted of the benefits of:
 - Using responsive html to cater for all device sizes with a single build.
@@ -42,15 +42,15 @@ I put a case forward that the content discoverability mechanisms are inherently 
 On the software side, I learnt and educated the rest of the team, who were already skilled in javascript, how to use NodeJS to rapidly create an API publishing queue and scheduling service to ingest content from the website CMS and send it to multiple app publishing platforms, including Adobe Experience Manager.
 
 :::: timeline
-### Timeline{.timeline__title}
+## Timeline{.timeline__title}
 
 ::: timeline__item
-#### 2015 - 2016{.timeline__item-title}
+### 2015 - 2016{.timeline__item-title}
 British Vogue, British GQ and British Glamour all have their *tablet* editions, as well as phone, replaced with this new responsive html-based system.
 :::
 
 ::: timeline__item
-#### 2014-11{.timeline__item-title}
+### 2014-11{.timeline__item-title}
 British Glamour is published on mobile in the App Store, the first to have a fully responsive monthly package with a completely interactive yet templated experience.
 
 @[vimeo](121742698##303x540)
@@ -58,7 +58,7 @@ British Glamour is published on mobile in the App Store, the first to have a ful
 :::
 
 ::: timeline__item
-#### 2014-04{.timeline__item-title}
+### 2014-04{.timeline__item-title}
 British GQ is published in the App Store using my team's publishing workflow, built in NodeJS.
 :::
 

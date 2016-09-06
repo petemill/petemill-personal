@@ -1,4 +1,5 @@
 @import "./projects/technology-list";
+@import "./typography.module.scss";
 
 .technology-list-section
 {
@@ -7,13 +8,17 @@
 
 .technology-list-section__title
 {
-  
+  composes: bodyFont;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 .technology-list
 {
   list-style: none;
   padding-left: 0;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .technology-list__technology

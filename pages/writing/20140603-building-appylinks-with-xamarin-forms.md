@@ -5,13 +5,11 @@ description: Investigating rapid cross-platform iOS and Android development
 created_utc: 2014/06/03 01:54:22
 ---
 
-#### Update
-
-*This was a weekend project as my entry for the Xamarin Forms Evolve conference competition. ...and [I won first prize](http://blog.xamarin.com/xamarin.forms-contest-winners/)!*
+**Update:** This was a weekend project as my entry for the Xamarin Forms Evolve conference competition. ...and [I won first prize](http://blog.xamarin.com/xamarin.forms-contest-winners/)!
 
 
 
-Code: [https://github.com/petemill/AppyLinks]()
+**Code:** [https://github.com/petemill/AppyLinks]()
 
 The new _Xamarin.Forms_ release is  pretty interesting. I spent a day exploring it and decided to build an app that I've personally seen a need for - quick way to get a list of links I may be working on to multiple devices.
 
@@ -134,13 +132,13 @@ public class UserSettingsStore : IUserSettingsStore
 }
 ```
 
-### Great things about Xamarin.Forms
+## Great things about Xamarin.Forms
 
   * You can make custom render implementations for each platform - for whole controls, or just to customise a small part of functionality - see the custom `NavigationPageRenderer` for iOS in AppyLinks source code.
   * You can provide Interfaces, and make an implementation on each platform, if you want to do platform-specific.
   * Each platform still has a separate project which can be completely customised or configured - Xamarin.Forms doesn't enforce some kind of purist approach.
 
-### Challenges with v1
+## Challenges with v1
 
   * No designer, even though there's both XAML support here, and there's the nice new iOS designer with Xamarin. Because of the spaghetti c# view code, I daren't add any (even basic) styling to these views with any speed, and that's a shame (especially on android).
   * Xamarin Studio is having problems with intellisense and syntax highlighting for objects defined in XAML.

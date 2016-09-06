@@ -1,18 +1,30 @@
 @import "../style/typography";
 
+.siteTitleFont
+{
+  @include siteTitleFont;
+}
+
+.titleFont
+{
+  @include titleFont;
+}
+
+.bodyFont
+{
+  @include bodyFont;
+}
 
 .siteTitle
 {
-  font-size: 30px;
-  font-family: Bungee;
-  letter-spacing: -1px;
+  composes: siteTitleFont;
+  font-size: 55px;
 }
 
 .sectionTitle
 {
-  @include titleFont;
-  font-size: 28px;
-  font-style: normal;
+  composes: titleFont;
+  font-size: 50px;
 }
 
 

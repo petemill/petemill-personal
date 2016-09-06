@@ -3,7 +3,7 @@ title: Finesse
 sort: 090
 ---
 
-### Role
+## Role
 - Founder
 - Front-end development
 - Back-end development
@@ -11,7 +11,7 @@ sort: 090
 - Cloud Infrastructure Architecture
 {.role-list}
 
-### Technologies
+## Technologies
 - NodeJS
 - SCSS
 - Javascript
@@ -21,7 +21,7 @@ sort: 090
 - Redis
 {.technology-list}
 
-### What is it?
+## What is it?
 Finesse is a web app that I co-founded in order to solve a common workflow problem for designers and front-end developers.
 
 Having managed teams of designers and developers working together, I often found that once projects were nearing completion or live, these teams wanted the ability to continue to make changes to front-end code in order to fix issues that had arisen through development against live data, devices and users.
@@ -35,10 +35,10 @@ Finesse solves that problem by running the website from any live location the we
 <img class="content-image --screenshot" src="./workspace-preview.png" alt="finesse.io screenshot" />
 
 :::: timeline
-### Timeline{.timeline__title}
+## Timeline{.timeline__title}
 
 ::: timeline__item
-#### 2016-05{.timeline__item-title}
+### 2016-05{.timeline__item-title}
 MVP implementation of product complete. Began collecting beta signups.
 
 <img class="timeline__item-image --screenshot" src="./timeline-signup.png" alt="finesse.io signup screenshot" />

@@ -2,7 +2,7 @@
 
 .section
 {
-  margin: 0 0 10px 0;
+  margin: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -16,30 +16,30 @@
 .section--home
 {
   composes: section;
-  border-top: solid 12px $color1;
+  background: $colorHomeHeader;
 }
 
 .section--projects
 {
   composes: section--content;
-  border-top: solid 3px $color4;
+  border-top: solid 6px $colorProjects;
 }
 
 .section--writing
 {
   composes: section--content;
-  border-top: solid 3px $color2;
+  border-top: solid 6px $colorWriting;
 }
 
 .section--tech
 {
   composes: section--content;
-  border-top: solid 3px $color3;
+  border-top: solid 6px $colorTechnology;
 }
 
 .header
 {
-  min-width: 320px;
+  min-width: 280px;
   max-width: 400px;
   flex-basis: 0;
   flex-shrink: 1;
@@ -54,7 +54,7 @@
 
 .body
 {
-  min-width: 320px;
+  min-width: 280px;
   max-width: 600px;
   flex-grow: 3;
   flex-shrink: 1;
@@ -67,8 +67,6 @@
 .title
 {
   text-align: left;
-  background-color: rgba(0, 0, 0, 1);
-  color: rgba(255, 255, 255, 1);
   display: inline-block;
   padding: 2px 4px;
   margin-top: 0;
@@ -78,31 +76,35 @@
 .title--projects
 {
   composes: title;
-  color: $color4;
+  color: $colorProjects;
 }
 
 .title--writing
 {
   composes: title;
-  color: $color2;
+  color: $colorWriting;
 }
 
 .title--tech
 {
   composes: title;
-  color: $color3;
+  color: $colorTechnology;
 }
 
 .title--site
 {
   composes: siteTitle from './typography.module.scss';
-  color: $color1;
+}
+
+.subtitle
+{
+  composes: body from './typography.module.scss';
+  line-height: 150%;
 }
 
 .external-link-section
 {
-  margin: 10px 0;
-  padding: 8px;
+  margin-top: 55px;
 }
 
 .external-link-section__title
@@ -113,7 +115,26 @@
 
 .external-link-section__link
 {
-  color: inherit;
+  color: white;
+  background: black;
+  font-family: "Space Mono";
+  font-size: 18px;
+  padding: 25px;
+  font-weight: normal;
+  text-decoration: none;
+  display: block;
+  border: solid 2px black;
+  border-radius: 4px;
+  &:after
+  {
+    display: inline;
+    content: ' >';
+  }
+  &:hover
+  {
+    background: white;
+    color: black;
+  }
 }
 
 .external-link-section--linkedin
