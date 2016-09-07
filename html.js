@@ -29,12 +29,12 @@ export default class Root extends Component {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="viewport"
-            content="width=device-width, initial-scale=1.0"
+            content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0,minimal-ui"
           />
           <title>{title}</title>
           <link rel="shortcut icon" href={this.props.favicon} />
           {css}
-          <link href="https://fonts.googleapis.com/css?family=Bungee|Open+Sans|Source+Code+Pro|VT323" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Work+Sans|Space+Mono|VT323" rel="stylesheet" />
         </head>
         <body>
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />
