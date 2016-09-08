@@ -1,27 +1,44 @@
 @import "../style/colors";
-
+$viewportSectionCollapseWidth: 637px;
 .section
 {
   margin: 0;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: flex-start;
+  @media (max-width: $viewportSectionCollapseWidth) {
+    flex-direction: column;
+  }
 }
 
 .section--content {
   composes: section;
+  margin: 20px 3%;
+  //content sections have margin, and no inner-padding
+  .header
+  {
+    padding-left: 0;
+  }
+  .body
+  {
+    padding-right: 0;
+  }
 }
 
 .section--home
 {
   composes: section;
   background: $colorHomeHeader;
+  //when header and body are collapsed, need paddng as header and body lose margin
+  @media (max-width: $viewportSectionCollapseWidth) {
+    padding: 3%;
+  }
 }
 
 .section--projects
 {
   composes: section--content;
+  margin-top: 0;
   border-top: solid 6px $colorProjects;
 }
 
@@ -39,13 +56,20 @@
 
 .header
 {
-  min-width: 280px;
-  max-width: 400px;
-  flex-basis: 280px;
-  flex-shrink: 1;
-  flex-grow: 1;
+  @media (min-width: $viewportSectionCollapseWidth) {
+    min-width: 280px;
+    max-width: 400px;
+    flex-basis: 280px;
+    flex-shrink: 1;
+    flex-grow: 1;
+  }
   padding: 3%;
+  //when header and body are collapsed, do not need padding, as section has margin
+  @media (max-width: $viewportSectionCollapseWidth) {
+    padding: 0;
+  }
 }
+
 
 .header--home
 {
@@ -54,13 +78,18 @@
 
 .body
 {
-  min-width: 280px;
-  max-width: 600px;
-  flex-grow: 3;
-  flex-shrink: 1;
-  flex-basis: 280px;
-  padding: 10px;
+  @media (min-width: $viewportSectionCollapseWidth) {
+    min-width: 280px;
+    max-width: 600px;
+    flex-grow: 3;
+    flex-shrink: 1;
+    flex-basis: 280px;
+  }
   padding: 3%;
+  //when header and body are collapsed, do not need padding, as section has margin
+  @media (max-width: $viewportSectionCollapseWidth) {
+    padding: 0;
+  }
 }
 
 
@@ -70,6 +99,7 @@
   display: inline-block;
   padding: 2px 4px;
   margin-top: 0;
+  margin-bottom: 15px;
   composes: sectionTitle from './typography.module.scss';
 }
 
@@ -94,6 +124,7 @@
 .title--site
 {
   composes: siteTitle from './typography.module.scss';
+  font-weight: normal;
 }
 
 .subtitle

@@ -16,7 +16,7 @@
 .timeline__item
 {
   border-left: solid 6px $colorProjects;
-  padding-left: 6px;
+  padding-left: 20px;
   p, li
   {
     @include bodyTypography;

@@ -14,7 +14,7 @@
 {
   composes: bodyFont;
   text-decoration: none;
-  color: $colorWriting;
+  color: #222;
   display: block;
   font-size: 23px;
   line-height: 121%;
@@ -25,10 +25,11 @@
 {
   composes: bodyFont;
   font-size: 16px;
-  line-height: 175%;
+  line-height: 145%;
+  margin-top: 10px;
   color: black;
   text-decoration: none;
-  display: inline;
+  display: block;
 }
 
 .publish-date

@@ -18,6 +18,10 @@
 .prose-content__body
 {
 
+  code
+  {
+    font-family: monospace;
+  }
   > p
   {
     @include bodyTypography;
@@ -56,12 +60,12 @@
 
   > h2
   {
-    font-size: 27px;
+    font-size: 30px;
   }
 
   > h3
   {
-    font-size: 25px;
+    font-size: 27px;
   }
 
   .content-image

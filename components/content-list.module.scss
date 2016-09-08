@@ -13,13 +13,20 @@
 
 .expand-command
 {
+  font-family: "Work Sans";
   background: none;
   border: none;
-  color: #0000dd;
-  text-decoration: underline;
+  color: black;
+  text-decoration: none;
+  border: solid 1px black;
+  padding: 9px;
   cursor: pointer;
   &:not(.-is-expanded)
   {
     font-weight: bold;
+  }
+  &:focus
+  {
+    outline: none;
   }
 }
