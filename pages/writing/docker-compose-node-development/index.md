@@ -146,9 +146,9 @@ Here's one function:
 
 ```bash
 adminrun() {
-	serviceName=$1;
-	shift;
-	docker-compose -f "/my-dev-location/docker-compose.yml" -f "/my-dev-location/docker-compose.admin.yml" run --rm $serviceName $*
+  serviceName=$1;
+  shift;
+  docker-compose -f "/my-dev-location/docker-compose.yml" -f "/my-dev-location/docker-compose.admin.yml" run --rm $serviceName $*
 }
 ```
 
