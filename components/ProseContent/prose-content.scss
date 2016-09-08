@@ -24,7 +24,8 @@
     max-width: 800px;
   }
 
-  > ul:not(.technology-list)
+  > ul:not(.technology-list),
+  > ol:not(.technology-list)
   {
     li
     {
