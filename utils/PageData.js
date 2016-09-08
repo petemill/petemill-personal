@@ -6,6 +6,8 @@ export function GetPagesInPath(allPages, path) {
   const pathPages = allPages.filter(page =>
     //filter: none (opposite of some) of the ignored paths match the page path
     !ignoredSearchPaths.some(ignoredPath => page.path.includes(ignoredPath))
+    //filter: draft posts
+    && (!page.data || !page.data.draft)
     //filter: page path matches the path we're looking for
     && page.file.dirname.split('/')[0] === path);
   //done
