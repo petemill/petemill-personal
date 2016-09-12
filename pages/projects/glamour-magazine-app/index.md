@@ -1,9 +1,9 @@
 ---
-title: Magazine Apps
+title: "Apps: Vogue, GQ, and Glamour"
 sort: 060
 ---
 
-## Responsible for:
+## Responsible for
 - Creating a publishing workflow
 - Creating an end-to-end prototype
 - Hiring and managing front-end developers
