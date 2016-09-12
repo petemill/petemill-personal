@@ -16,10 +16,18 @@ sort: 090
 - SCSS
 - Javascript
 - HTML
-- Web Proxy
+- HTTP Proxy
 - DynamoDB
 - Redis
 {.technology-list}
+
+
+- The IDE a single-page app using websockets for fast client communication and notifications.
+- I built a provisioning service using Node, AutoFS, and Sparse Disk Images. It creates user workspaces on-demand, and very quickly distributes these workspaces against an automatically scaling set of cloud instances.
+- I created a secure preview signup, registration and authentication system, implemented in Express.
+- Docker is used to run commands against user workspaces, orchestrated by a custom service using a set of queues for scheduling.
+- Deepstream.io and redis is used for cross-service communication.
+
 
 ## What is it?
 Finesse is a web app that I co-founded in order to solve a common workflow problem for designers and front-end developers.
@@ -30,7 +38,7 @@ The problem these teams encounter is that in order to contribute to the front-en
 
 Finesse solves that problem by running the website from any live location the website is at, and loading the front-end code from a private workspace in which the user can make edits. The user can then share their new version of the website with the rest of their team, or even push their changes back to the main codebase.
 
-[Learn more about Finesse and sign-up to use it at finesse.io.](finesse.io)
+[Learn more about Finesse and sign-up to use it at finesse.io.](https://finesse.io)
 
 <img class="content-image --screenshot" src="./workspace-preview.png" alt="finesse.io screenshot" />
 
