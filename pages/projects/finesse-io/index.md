@@ -22,7 +22,7 @@ sort: 090
 {.technology-list}
 
 
-- The IDE a single-page app using websockets for fast client communication and notifications.
+- The IDE is a single-page app using websockets for fast client communication and notifications.
 - I built a provisioning service using Node, AutoFS, and Sparse Disk Images. It creates user workspaces on-demand, and very quickly distributes these workspaces against an automatically scaling set of cloud instances.
 - I created a secure preview signup, registration and authentication system, implemented in Express.
 - Docker is used to run commands against user workspaces, orchestrated by a custom service using a set of queues for scheduling.
