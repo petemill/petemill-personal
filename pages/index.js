@@ -110,6 +110,7 @@ export default class ReactComponent extends Component {
                 <li className={stylesTechnologyList['technology-list__technology']}>AWS</li>
                 <li className={stylesTechnologyList['technology-list__technology']}>Kubernetes / ECS</li>
                 <li className={stylesTechnologyList['technology-list__technology']}>Linux</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>Git</li>
                 <li className={stylesTechnologyList['technology-list__technology']}>Codeship / CircleCI</li>
               </ul>
             </div>
@@ -127,6 +128,7 @@ export default class ReactComponent extends Component {
                 <li className={stylesTechnologyList['technology-list__technology']}>Windows Services</li>
                 <li className={stylesTechnologyList['technology-list__technology']}>Windows Forms</li>
                 <li className={stylesTechnologyList['technology-list__technology']}>Powershell</li>
+                <li className={stylesTechnologyList['technology-list__technology']}>Mercurial</li>
                 <li className={stylesTechnologyList['technology-list__technology']}>Teamcity</li>
               </ul>
             </div>
