@@ -24,3 +24,13 @@
   line-height: 160%;
   letter-spacing: 0px;
 }
+
+@mixin h2FontSize
+{
+  font-size: 30px;
+}
+
+@mixin h3FontSize
+{
+  font-size: 27px;
+}

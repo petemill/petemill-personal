@@ -60,12 +60,12 @@
 
   > h2
   {
-    font-size: 30px;
+    @include h2FontSize;
   }
 
   > h3
   {
-    font-size: 27px;
+    @include h3FontSize;
   }
 
   .content-image

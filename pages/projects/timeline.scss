@@ -9,7 +9,7 @@
 .timeline__title
 {
   @include titleFont;
-  font-size: 27px;
+  @include h2FontSize;
   line-height: 100%;
 }
 
@@ -31,7 +31,7 @@
 .timeline__item-title
 {
   @include titleFont;
-  font-size: 27px;
+  @include h3FontSize;
   line-height: 100%;
   color: $colorProjects;
 }
