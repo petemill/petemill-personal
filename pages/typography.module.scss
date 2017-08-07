@@ -21,6 +21,11 @@
   font-size: 55px;
 }
 
+.siteSubtitle
+{
+  @include h3FontSize;
+}
+
 .sectionTitle
 {
   composes: titleFont;

@@ -41,7 +41,7 @@ export default class ReactComponent extends Component {
             <h1 className={stylesSection['title--site']}>Pete Miller</h1>
             <p className={stylesSection['subtitle']}>I'm a full-stack developer with people and product management experience</p>
           </div>
-          <div className={stylesSection.body}>
+          <div className={stylesSection.data}>
             <p className={stylesTypography.body}>I have a passion for the web. I love to work on front-end and back-end problems, whilst architecting data structures, build and deployment setup, and creating cloud infrastructure. I also enjoy the personal nature of devices and apps and am motivated to work on apps which empower people.</p>
             <p className={stylesTypography.body}>I have architected, managed and implemented several high-scale consumer-facing websites, apps and internal tools.</p>
             <p className={stylesTypography.body}>I enjoy working within multi-disciplined teams and have experience creating, empowering and leading them in large and small organizations. I'm passionate about communication strategies and workflow that makes everyone feel happy to work. I've been working on a startup, finesse.io, which helps designers contribute to the front-end code for any website.</p>
@@ -50,14 +50,17 @@ export default class ReactComponent extends Component {
         </section>
 
         <section className={stylesSection['section--projects']}>
-          <div className={stylesSection.header}>
-            <h2 className={stylesSection['title--projects']}>
-              Projects
-            </h2>
-            <p className={stylesSection['subtitle']}>A selection of projects I've worked on</p>
-            <p className={stylesSection['subtitle']}>Choose one to view details of my involvement</p>
-          </div>
-          <div className={stylesSection.body}>
+          
+          <h2 className={stylesSection['title--projects']}>
+            Projects
+          </h2>
+        
+          <div className={stylesSection.data}>
+            
+            <div className={stylesSection.intro}>
+              <h3 className={stylesSection['subtitle']}>A selection of projects I've worked on.<br />Choose one to view details of my involvement:</h3>
+            </div>
+            
             <ProjectLinks pages={GetPagesInPath(allPages, 'projects')} />
 
             <section className={stylesSection['external-link-section--linkedin']}>
@@ -71,13 +74,15 @@ export default class ReactComponent extends Component {
 
 
         <section className={stylesSection['section--writing']}>
-          <div className={stylesSection.header}>
-            <h2 className={stylesSection['title--writing']}>
-              Writing
-            </h2>
-            <p className={stylesSection['subtitle']}>Code, Workflow and other industry topics</p>
-          </div>
-          <div className={stylesSection.body}>
+          
+          <h2 className={stylesSection['title--writing']}>
+            Writing
+          </h2>
+          <div className={stylesSection.data}>
+            <div className={stylesSection.intro}>
+              <h3 className={stylesSection['subtitle']}>Code, Workflow and other industry topics</h3>
+            </div>
+            
             <ArticleLinks pages={GetPagesInPath(allPages, 'writing')} />
             <section className={stylesSection['external-link-section--twitter']}>
               <h3 className={stylesSection['external-link-section__title']}>
@@ -90,11 +95,10 @@ export default class ReactComponent extends Component {
 
 
         <section className={stylesSection['section--tech']}>
-          <div className={stylesSection.header}>
+          
             <h2 className={stylesSection['title--tech']}>Technologies</h2>
-            <p className={stylesSection['subtitle']}>My specific &amp; demonstrable skillset</p>
-          </div>
-          <div className={stylesSection.body}>
+          
+          <div className={stylesSection.data}>
             <div className={stylesTechnologyList['technology-list-section']}>
               <h3 className={stylesTechnologyList['technology-list-section__title']}>Currently Working With</h3>
               <ul className={stylesTechnologyList['technology-list']}>
@@ -115,7 +119,7 @@ export default class ReactComponent extends Component {
               </ul>
             </div>
             <div className={stylesTechnologyList['technology-list-section']}>
-              <h3 className={stylesTechnologyList['technology-list-section__title']}>Previous Expert Experience With</h3>
+              <h3 className={stylesTechnologyList['technology-list-section__title']}>Previous Experience With</h3>
               <ul className={stylesTechnologyList['technology-list']}>
                 <li className={stylesTechnologyList['technology-list__technology']}>SQL</li>
                 <li className={stylesTechnologyList['technology-list__technology']}>.net (C#)</li>

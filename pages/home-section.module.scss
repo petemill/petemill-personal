@@ -1,8 +1,10 @@
 @import "../style/colors";
+@import "./typography.module.scss";
 $viewportSectionCollapseWidth: 637px;
 .section
 {
   margin: 0;
+  padding: 20px 3%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -13,13 +15,12 @@ $viewportSectionCollapseWidth: 637px;
 
 .section--content {
   composes: section;
-  margin: 20px 3%;
-  //content sections have margin, and no inner-padding
-  .header
+  > .header,
+  > .title
   {
     padding-left: 0;
   }
-  .body
+  > .data
   {
     padding-right: 0;
   }
@@ -29,10 +30,6 @@ $viewportSectionCollapseWidth: 637px;
 {
   composes: section;
   background: $colorHomeHeader;
-  //when header and body are collapsed, need paddng as header and body lose margin
-  @media (max-width: $viewportSectionCollapseWidth) {
-    padding: 3%;
-  }
 }
 
 .section--projects
@@ -56,6 +53,9 @@ $viewportSectionCollapseWidth: 637px;
 
 .header
 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
   @media (min-width: $viewportSectionCollapseWidth) {
     min-width: 280px;
     max-width: 400px;
@@ -63,11 +63,18 @@ $viewportSectionCollapseWidth: 637px;
     flex-shrink: 1;
     flex-grow: 1;
   }
-  padding: 3%;
-  //when header and body are collapsed, do not need padding, as section has margin
-  @media (max-width: $viewportSectionCollapseWidth) {
-    padding: 0;
-  }
+}
+
+.title
+{
+  composes: header;
+  composes: sectionTitle from './typography.module.scss';
+}
+
+.intro
+{
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -76,7 +83,7 @@ $viewportSectionCollapseWidth: 637px;
   composes: header;
 }
 
-.body
+.data
 {
   @media (min-width: $viewportSectionCollapseWidth) {
     min-width: 280px;
@@ -85,23 +92,13 @@ $viewportSectionCollapseWidth: 637px;
     flex-shrink: 1;
     flex-basis: 280px;
   }
-  padding: 3%;
+  padding: 0 3%;
   //when header and body are collapsed, do not need padding, as section has margin
   @media (max-width: $viewportSectionCollapseWidth) {
     padding: 0;
   }
 }
 
-
-.title
-{
-  text-align: left;
-  display: inline-block;
-  padding: 2px 4px;
-  margin-top: 0;
-  margin-bottom: 15px;
-  composes: sectionTitle from './typography.module.scss';
-}
 
 .title--projects
 {
@@ -129,13 +126,16 @@ $viewportSectionCollapseWidth: 637px;
 
 .subtitle
 {
-  composes: body from './typography.module.scss';
+  composes: bodyFont from './typography.module.scss';
+  margin: 10px 0 30px 0;
+  font-size: 18px;
   line-height: 150%;
+  font-style: italic;
 }
 
 .external-link-section
 {
-  margin-top: 55px;
+  margin-top: 70px;
 }
 
 .external-link-section__title
@@ -146,8 +146,8 @@ $viewportSectionCollapseWidth: 637px;
 
 .external-link-section__link
 {
-  color: white;
-  background: black;
+  background: white;
+  color: black;
   font-family: "Space Mono";
   font-size: 18px;
   padding: 25px;
@@ -163,8 +163,8 @@ $viewportSectionCollapseWidth: 637px;
   }
   &:hover
   {
-    background: white;
-    color: black;
+    color: white;
+    background: black;
   }
 }
 

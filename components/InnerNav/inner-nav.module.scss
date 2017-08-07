@@ -1,9 +1,10 @@
 @import "../../style/colors";
 @import "../../style/utils";
+@import "../../style/typography";
 
 .inner-nav
 {
-  font-family: "Work Sans";
+  @include siteTitleFont;
   display: flex;
   flex-direction: row;
   align-items: center;

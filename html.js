@@ -34,7 +34,7 @@ export default class Root extends Component {
           <title>{title}</title>
           <link rel="shortcut icon" href={this.props.favicon} />
           {css}
-          <link href="https://fonts.googleapis.com/css?family=Work+Sans|Space+Mono|VT323" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Work+Sans|Space+Mono|Karla" rel="stylesheet" />
         </head>
         <body>
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />
