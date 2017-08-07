@@ -25,7 +25,7 @@
     "moment": "^2.14.1",
     "normalize.css": "^4.2.0",
     "object-assign": "^4.1.0",
-    "petemill/markdown-it-block-embed": "0.0.3",
+    "markdown-it-block-embed": "petemill/markdown-it-block-embed",
     "react": "^15.3.0",
     "react-document-title": "^2.0.1",
     "react-dom": "^15.3.0",
