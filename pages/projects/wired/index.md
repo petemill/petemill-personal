@@ -1,6 +1,7 @@
 ---
 title: Wired
 sort: 080
+daterange: 2012 - 2014
 ---
 
 ## Responsible For

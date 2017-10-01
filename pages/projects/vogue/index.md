@@ -1,6 +1,7 @@
 ---
 title: Vogue
 sort: 070
+daterange: 2007 - 2013
 ---
 
 ## Responsible For

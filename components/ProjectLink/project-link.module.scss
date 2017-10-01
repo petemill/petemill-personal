@@ -33,3 +33,10 @@ $colorPl: #222;
     background-color: $colorPl;
   }
 }
+
+.year
+{
+  text-decoration: none;
+  color: $colorDate;
+  composes: bodyFont;
+}

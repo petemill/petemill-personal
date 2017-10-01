@@ -10,7 +10,8 @@ export default class ProjectLink extends Component {
 
     return {
       name: PropTypes.string.isRequired,
-      path: PropTypes.string.isRequired
+      path: PropTypes.string.isRequired,
+      daterange: PropTypes.string.isRequired,
     }
   }
 
@@ -18,11 +19,12 @@ export default class ProjectLink extends Component {
   render() {
 
     //collect data
-    const {name, path} = this.props;
+    const {name, path, daterange} = this.props;
     //render markup
     return (
       <div className={stylesProjectLink['project-link']}>
           <Link to={prefixLink(path)} title={name}  className={stylesProjectLink['title']}>{name}</Link>
+          <Link to={prefixLink(path)} title={name}  className={stylesProjectLink['year']}>{ daterange }</Link>
       </div>
     )
   }

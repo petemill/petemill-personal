@@ -1,5 +1,6 @@
 ---
 title: "Apps: Vogue, GQ, and Glamour"
+daterange: 2014
 sort: 060
 ---
 
