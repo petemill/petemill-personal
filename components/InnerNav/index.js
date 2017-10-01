@@ -18,7 +18,6 @@ export default class InnerNav extends Component {
       <nav className={styleInnerNav[`inner-nav--${sectionName}`]}>
         <Link to={prefixLink('/')} className={styleInnerNav['site-title-link']}>Pete Miller</Link>
         <p className={styleInnerNav['site-section-name']}>{sectionName}</p>
-        <Link to={prefixLink('/')} className={styleInnerNav['site-home-link']}>Home</Link>
       </nav>
     );
   }
